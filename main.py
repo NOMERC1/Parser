@@ -1,4 +1,5 @@
-from parser import scrape_books_info, write_to_excel
+import parser
 
-book_info_list = scrape_books_info()
-write_to_excel(book_info_list)
+if __name__ == "__main__":
+    book_info_list = parser.scrape_books_info()
+    parser.write_to_excel(book_info_list)
